@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | SAÉ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="sae.html">SAÉ</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Situations d'Apprentissage et d'Évaluation (SAÉ)</h1>
+        <p style="margin-bottom: 30px; color: #86868b;">Veuillez cliquer sur chaque projet pour afficher les détails de réalisation, les étapes chronologiques et les justificatifs graphiques associés.</p>
+
+        <!-- SAÉ 1.01 -->
+        <details>
+            <summary>SAÉ 1.01 - Se sensibiliser à l'hygiène informatique et à la cybersécurité</summary>
+            <div class="sae-content">
+                <span class="badge">Cybersécurité</span>
+                <p><strong>Description du projet :</strong> Cette situation d'apprentissage visait à s'approprier les concepts fondamentaux de la sécurité numérique à travers des analyses théoriques et des cas de mise en situation professionnelle pratique.</p>
+                
+                <h3>Étapes de réalisation :</h3>
+                <ul>
+                    <li>- **Étape 1 : Formation théorique et certification** — Suivi rigoureux des différents modules dispensés par la plateforme SecNumAcadémie de l'ANSSI afin d'assimiler les bonnes pratiques de l'hygiène informatique.</li>
+                    <li>- **Étape 2 : Définition des critères de sécurité** — Étude approfondie des mécanismes d'authentification pour comprendre les exigences structurelles d'un mot de passe robuste face aux cybermenaces.</li>
+                    <li>- **Étape 3 : Restitution et vulgarisation** — Élaboration de supports visuels de synthèse destinés à formaliser et vulgariser les remédiations de sécurité pour un public non spécialisé.</li>
+                </ul>
+
+                <div class="evidence-gallery">
+                    <div class="evidence-wrapper">
+                        <img src="sae1.png" alt="Présentation de la cybersécurité" class="sae-image">
+                        <p class="image-caption">Preuve 1.1 : Document d'analyse de la problématique cyber et des parcours associés.</p>
+                    </div>
+                    <div class="evidence-wrapper">
+                        <img src="mdp.png" alt="Bonnes pratiques des mots de passe" class="sae-image">
+                        <p class="image-caption">Preuve 1.2 : Graphique détaillant la structure d'un mot de passe robuste (longueur et complexité des caractères).</p>
+                    </div>
+                </div>
+                <p><strong>Justification des illustrations :</strong> La première illustration présente le contexte global et les parcours de notre formation en cybersécurité. La seconde image (`mdp.png`) a été intégrée pour illustrer visuellement l'optique d'un bon mot de passe : l'analyse démontre qu'un code basé sur une longueur élevée et des types de caractères diversifiés (majuscules, minuscules, chiffres, symboles) garantit une résistance optimale contre les attaques par force brute ou par dictionnaire.</p>
+
+                <div class="evaluation-box">
+                    <h4>Auto-évaluation :</h4>
+                    <p>Cette SAÉ m'a permis de développer une posture réflexive quant à l'importance du facteur humain en sécurité des systèmes d'information. La principale contrainte a consisté à vulgariser des notions cryptographiques complexes, un objectif atteint grâce à une structuration rigoureuse de nos livrables.</p>
+                </div>
+            </div>
+        </details>
+
+        <!-- SAÉ 1.2 -->
+        <details>
+            <summary>SAÉ 1.2 - Implémentation d'une Infrastructure Réseau d'Entreprise</summary>
+            <div class="sae-content">
+                <span class="badge">Infrastructure Réseau</span>
+                <p><strong>Description du projet :</strong> Ce projet consistait à concevoir et déployer une infrastructure réseau complète et sécurisée pour une entreprise, de la topologie physique jusqu'à la configuration des services applicatifs.</p>
+                
+                <h3>Étapes de réalisation :</h3>
+                <ul>
+                    <li>- **Étape 1 : Modélisation de la topologie** — Conception et validation du schéma d'interconnexion incluant la répartition des équipements actifs et la segmentation des réseaux locaux.</li>
+                    <li>- **Étape 2 : Configuration du routage et des VLANs** — Définition d'un plan d'adressage strict et configuration du routage inter-VLAN pour isoler les différents services de l'entreprise (Logiciels, Comptabilité, Administratif, Vente, Supervision, Administration).</li>
+                    <li>- **Étape 3 : Déploiement des serveurs de voix sur IP** — Configuration d'un serveur VoIP/SIP et rédaction de guides d'installation pour l'enregistrement et l'interconnexion des clients MicroSIP.</li>
+                </ul>
+
+                <div class="evidence-gallery">
+                    <div class="evidence-wrapper">
+                        <img src="toutain.png" alt="Maquette d'infrastructure réseau" class="sae-image">
+                        <p class="image-caption">Preuve 2.1 : Topologie réseau globale intégrant l'interconnexion des commutateurs, de l'hyperviseur Proxmox et le découpage des VLANs.</p>
+                    </div>
+                    <div class="evidence-wrapper">
+                        <img src="notice.png" alt="Notice de configuration VoIP" class="sae-image">
+                        <p class="image-caption">Preuve 2.2 : Extrait du guide de réalisation pour le déploiement et le test de l'environnement serveur SIP.</p>
+                    </div>
+                </div>
+                <p><strong>Justification des illustrations :</strong> La première image expose la maquette réseau complète que nous devions réaliser, matérialisant visuellement les liens agrégés en 1 Gbps et la répartition de nos machines de production. La seconde image (`notice.png`) montre une section de notre notice technique, indispensable pour prouver la rigueur de notre méthodologie lors de la création pas-à-pas des comptes utilisateurs et du contrôle des liaisons sur Wireshark.</p>
+
+                <div class="evaluation-box">
+                    <h4>Auto-évaluation :</h4>
+                    <p>La gestion d'une infrastructure multi-VLAN a mis en évidence la nécessité d'une planification d'adressage rigoureuse en amont. L'utilisation d'une notice rédigée en Markdown a grandement facilité la réplicabilité de nos configurations serveurs, validant ainsi nos objectifs de gestion de projet.</p>
+                </div>
+            </div>
+        </details>
+
+        <!-- SAÉ 1.3 -->
+        <details>
+            <summary>SAÉ 1.3 - Découverte et qualification d'un dispositif de transmission</summary>
+            <div class="sae-content">
+                <span class="badge">Télécommunications</span>
+                <p><strong>Description du projet :</strong> Mesure et qualification physique d'un support de transmission de données par fibre optique dans le cadre d'un déploiement FTTH.</p>
+                
+                <h3>Étapes de réalisation :</h3>
+                <ul>
+                    <li>- **Étape 1 : Raccordement et alignement** — Brassage physique des jarretières optiques sur le tiroir de distribution en respectant le plan de routage GPON affecté à notre groupe.</li>
+                    <li>- **Étape 2 : Test de continuité visuel** — Injection d'un faisceau laser rouge à l'extrémité du support pour s'assurer de l'absence de cassure ou de courbure macroscopique destructrice le long du brin de fibre.</li>
+                    <li>- **Étape 3 : Raccordement des instruments de photométrie** — Calibration de la source et du photomètre à une longueur d'onde de 1310 nm pour mesurer précisément l'atténuation d'insertion globale de la liaison L1.</li>
+                </ul>
+
+                <div class="evidence-gallery">
+                    <div class="evidence-wrapper">
+                        <img src="tele.png" alt="Mesures de photométrie optique" class="sae-image">
+                        <p class="image-caption">Preuve 3.1 : Relevé de puissance expérimentale stable à -8,43 dBm sur le photomètre de test.</p>
+                    </div>
+                    <div class="evidence-wrapper">
+                        <img src="point rouge.png" alt="Test de continuité visuel laser" class="sae-image">
+                        <p class="image-caption">Preuve 3.2 : Visualisation du point lumineux rouge attestant de la continuité physique de la fibre.</p>
+                    </div>
+                </div>
+                <p><strong>Justification des illustrations :</strong> La première capture d'écran présente le relevé photométrique final confirmant une atténuation en conformité directe avec nos calculs théoriques de pertes d'insertion. La seconde image (`point rouge.png`) montre l'étape essentielle de validation visuelle : le point lumineux rouge projeté sur la main prouve de manière indéniable le bon raccordement de nos connecteurs et la parfaite continuité du signal lumineux à travers les cassettes d'épissurage.</p>
+
+                <div class="evaluation-box">
+                    <h4>Auto-évaluation :</h4>
+                    <p>Cette manipulation pratique a renforcé ma maîtrise des outils de métrologie optique. L'analyse des écarts a démontré l'impact critique de la propreté des connecteurs sur l'atténuation globale du signal, une compétence fondamentale pour les déploiements réseaux haut débit.</p>
+                </div>
+            </div>
+        </details>
+
+        <!-- SAÉ 1.4 -->
+        <details>
+            <summary>SAÉ 1.4 - Déploiement et intégration d'un site web fan</summary>
+            <div class="sae-content">
+                <span class="badge">Développement Web</span>
+                <p><strong>Description du projet :</strong> Création, structuration et hébergement d'un site internet vitrine adaptatif dédié à un club de football professionnel afin d'assimiler les standards d'intégration W3C.</p>
+                
+                <h3>Étapes de réalisation :</h3>
+                <ul>
+                    <li>- **Étape 2 : Maquettage et organisation sémantique** — Écriture des fichiers de structure HTML5 en veillant à la hiérarchisation correcte des balises de contenu (header, nav, section, main).</li>
+                    <li>- **Étape 2 : Stylisation responsive** — Conception d'une feuille de style CSS3 utilisant Flexbox et des grilles de placement pour garantir une mise en page fluide et esthétique.</li>
+                    <li>- **Étape 3 : Intégration de modules dynamiques** — Organisation des sections d'actualités et des fiches joueurs vedettes intégrant des mécanismes de gestion d'erreurs de chargement d'images.</li>
+                </ul>
+
+                <div class="evidence-gallery">
+                    <div class="evidence-wrapper">
+                        <img src="cityfan.png" alt="Fichier d'intégration HTML" class="sae-image">
+                        <p class="image-caption">Preuve 4.1 : Vue du code source structuré mettant en œuvre les balises sémantiques de la page d'accueil.</p>
+                    </div>
+                    <div class="evidence-wrapper">
+                        <img src="phil.png" alt="Rendu de l'interface graphique du site fan" class="sae-image">
+                        <p class="image-caption">Preuve 4.2 : Interface finale du site vitrine Manchester City affichant la section d'accueil et le trombinoscope des joueurs.</p>
+                    </div>
+                </div>
+                <p><strong>Justification des illustrations :</strong> La première image expose les lignes de code HTML de notre architecture applicative, démontrant la propreté des indentations et l'intégration des feuilles de style externes. La seconde image (`cityfan.png`) montre l'interface graphique finale obtenue : elle met en évidence l'intégration réussie de la fiche du joueur Phil Foden, validant l'agencement exact prévu lors de la phase de conception visuelle.</p>
+
+                <div class="evaluation-box">
+                    <h4>Auto-évaluation :</h4>
+                    <p>L'utilisation coordonnée de HTML5 et CSS3 m'a permis d'assimiler les contraintes du design adaptatif. La mise en conformité vis-à-vis des critères d'accessibilité WCAG a nécessité une attention particulière sur le choix des contrastes de couleurs, consolidant mes compétences en intégration front-end.</p>
+                </div>
+            </div>
+        </details>
+
+        <!-- SAÉ 1.5 -->
+        <details>
+            <summary>SAÉ 1.5 - Traitement de données structurées et cartographie interactive</summary>
+            <div class="sae-content">
+                <span class="badge">Programmation & APIs</span>
+                <p><strong>Description du projet :</strong> Développement d'une application de traitement de données géographiques en langage Python pour cartographier l'accessibilité des commerces d'une agglomération.</p>
+                
+                <h3>Étapes de réalisation :</h3>
+                <ul>
+                    <li>- **Étape 1 : Requêtage de l'API réseau** — Implémentation des requêtes HTTP pour interroger la base de données OpenStreetMap et obtenir les flux d'informations bruts.</li>
+                    <li>- **Étape 2 : Parsing et sécurisation du JSON** — Analyse syntaxique des dictionnaires de données reçus et filtrage méthodique des attributs requis (coordonnées x/y, nom, accessibilité PMR).</li>
+                    <li>- **Étape 3 : Génération du rendu cartographique** — Exploitation de bibliothèques spécialisées pour positionner des marqueurs visuels dotés d'un code couleur dynamique traduisant l'état des infrastructures.</li>
+                </ul>
+
+                <div class="evidence-gallery">
+                    <div class="evidence-wrapper">
+                        <img src="rennes.png" alt="Code source de l'analyse JSON" class="sae-image">
+                        <p class="image-caption">Preuve 5.1 : Script de traitement gérant le dictionnaire de données fictives de l'API de test.</p>
+                    </div>
+                    <div class="evidence-wrapper">
+                        <img src="saintanne.png" alt="Données structurées des commerces" class="sae-image">
+                        <p class="image-caption">Preuve 5.2 : Extrait de la structure de données filtrée contenant les fiches des commerces ciblés.</p>
+                    </div>
+                </div>
+                <p><strong>Justification des illustrations :</strong> La première capture montre le cœur algorithmique de gestion et d'extraction de notre structure JSON. La seconde image (`saintanne.png`) présente un échantillon précis des données de notre base de données mockée : elle met en évidence la sélection spécifique d'épiceries ciblées comme "Le Panier Sainte-Anne" ou "L'Épicerie du Mail", prouvant l'intégrité de notre algorithme de tri lors de l'isolement des booléens d'accessibilité PMR et des coordonnées géodésiques de chaque point d'intérêt.</p>
+
+                <div class="evaluation-box">
+                    <h4>Auto-évaluation :</h4>
+                    <p>Ce projet a validé ma capacité à manipuler des structures de données complexes imbriquées (tableaux et dictionnaires). Face aux risques de plantage liés aux valeurs nulles dans le flux d'informations, l'implémentation de valeurs par défaut a permis de garantir la robustesse industrielle de l'application.</p>
+                </div>
+            </div>
+        </details>
+    </div>
+    <footer>© 2026 Abdelsalem Benouaili - IUT de Caen</footer>
+</body>
+</html>
